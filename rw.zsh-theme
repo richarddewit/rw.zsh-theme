@@ -55,7 +55,7 @@ get_fill_bar() {
   echo -n $RW_FILLBAR
 }
 
-local time="%{$fg[white]%}%D{%k:%M:%S}%{$reset_color%}"
+local time="%{$fg[white]%}%D{%H:%M:%S}%{$reset_color%}"
 
 # VCS
 RW_VCS_PROMPT_PREFIX1=""
