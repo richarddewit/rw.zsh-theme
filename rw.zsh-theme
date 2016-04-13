@@ -20,7 +20,8 @@ RW_TIME_PREFIX="("
 RW_TIME_SUFFIX=")"
 
 function precmd {
-  local termwidth=((${COLUMNS} - 1))
+  local termwidth=0
+  ((termwidth=${COLUMNS} - 1))
 
   RW_FILLBAR=""
   RW_PWDLEN=""
