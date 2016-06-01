@@ -16,7 +16,7 @@ RW_PWD_PREFIX=" ("
 RW_PWD_SUFFIX=") "
 RW_FILLER_CHAR=" "
 RW_TIME="        "
-RW_TIME_PREFIX="("
+RW_TIME_PREFIX=""
 RW_TIME_SUFFIX=")"
 
 function precmd {
@@ -129,7 +129,7 @@ ${time}\
 %{$RW_CNR_TR%}
 $RW_CNR_BL${privilege}"
 
-  RPROMPT="(${RW_VCS})${RW_CNR_BR}"
+  RPROMPT="${RW_VCS})${RW_CNR_BR}"
 }
 
 setprompt
